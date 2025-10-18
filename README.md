@@ -59,3 +59,20 @@ Create a **small one-page** or **mini-SPA** application **without frameworks** (
 ## My option: 14
 
 Service desk manager. Fields: title, requester, priority, status (open/in progress/done), createdAt. Queue with sorting; status change; filters.
+
+## How to Run the Project
+1. Clone the project:
+    ```bash
+       git clone https://github.com/username/project.git
+    ```
+2. Open the terminal in the folder:
+    ```bash
+    cd project-root
+    ```
+3. Start the local server:
+    ```bash
+    python -m http.server 8000
+    ```
+4. Open your browser and go to:
+    http://localhost:8000/public/index.html
+    
