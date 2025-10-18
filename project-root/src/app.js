@@ -29,7 +29,7 @@ const requestsContainer = document.getElementById('requestsContainer');
 // --- Load requests ---
 async function loadRequests() {
     try {
-        const response = await fetch('/assets/data.json');
+        const response = await fetch('../assets/data.json');
         const data = await response.json();
         requests = data.requests || [];
         saveTolocal(); 
@@ -47,7 +47,7 @@ function saveTolocal() {
 
 
 // --- Render requests to the DOM ---
-function renderRequests(filterd = null) {
+function renderRequests(filtered = null) {
     const list = filtered || requests;
     requestsContainer.innerHTML = '';
     
@@ -86,7 +86,7 @@ function renderRequests(filterd = null) {
 }
 
 
-from.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     // --- Validate fields ---
